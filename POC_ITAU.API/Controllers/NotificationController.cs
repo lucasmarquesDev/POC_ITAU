@@ -17,7 +17,7 @@ namespace POC_ITAU.Controllers
             _integrationService = intergrationService;
         }
 
-        [HttpPost(Name = "sendEmail")]
+        [HttpPost("sendEmail")]
         public async Task<IActionResult> SendEmail([FromBody] Notification notification)
         {
             await _integrationService.SendNotifcation(notification);
