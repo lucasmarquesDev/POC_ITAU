@@ -3,10 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21CDFA29-6EA2-4D6F-9B2F-145564DF7C85}|..\\POC_ITAU.Persistence\\POC_ITAU.Persistence\\POC_ITAU.Persistence.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.persistence\\poc_itau.persistence\\kafka\\kafkaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72982E3E-F857-41C0-AC9A-BE5952B9C002}|..\\POC_ITAU.Application\\POC_ITAU.Application\\POC_ITAU.Application.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.application\\poc_itau.application\\usecases\\createnotificarion\\createnotificarionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72982E3E-F857-41C0-AC9A-BE5952B9C002}|..\\POC_ITAU.Application\\POC_ITAU.Application\\POC_ITAU.Application.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.application\\poc_itau.application\\usecases\\createnotificarion\\createnotificarionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21CDFA29-6EA2-4D6F-9B2F-145564DF7C85}|..\\POC_ITAU.Persistence\\POC_ITAU.Persistence\\POC_ITAU.Persistence.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.persistence\\poc_itau.persistence\\kafka\\kafkaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C6D50FF3-F8F5-4DB5-A973-6A883A049CB2}|POC_ITAU.API.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.api\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,7 +67,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -95,13 +95,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CreateNotificarionHandler.cs",
               "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionHandler.cs",
               "RelativeDocumentMoniker": "..\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionHandler.cs",
-              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionHandler.cs",
-              "RelativeToolTip": "..\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionHandler.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAowEkAAAAvAAAA",
+              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionHandler.cs*",
+              "RelativeToolTip": "..\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionHandler.cs*",
+              "ViewState": "AQIAAD8AAAAAAAAAAAD4v1QAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T03:45:26.163Z",
               "EditorCaption": ""
@@ -114,7 +114,7 @@
               "RelativeDocumentMoniker": "..\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\IntegrationService.cs",
               "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\IntegrationService.cs",
               "RelativeToolTip": "..\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\IntegrationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T02:50:09.352Z",
               "EditorCaption": ""
@@ -139,7 +139,7 @@
               "RelativeDocumentMoniker": "Controllers\\NotificationController.cs",
               "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\Controllers\\NotificationController.cs",
               "RelativeToolTip": "Controllers\\NotificationController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAvwBUAAAAIAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAawBUAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T02:27:18.261Z",
               "EditorCaption": ""
@@ -152,7 +152,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAC0AAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T02:19:33.821Z",
               "EditorCaption": ""
@@ -171,13 +171,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "KafkaService.cs",
               "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Persistence\\POC_ITAU.Persistence\\Kafka\\KafkaService.cs",
               "RelativeDocumentMoniker": "..\\POC_ITAU.Persistence\\POC_ITAU.Persistence\\Kafka\\KafkaService.cs",
               "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Persistence\\POC_ITAU.Persistence\\Kafka\\KafkaService.cs",
               "RelativeToolTip": "..\\POC_ITAU.Persistence\\POC_ITAU.Persistence\\Kafka\\KafkaService.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAqwC8AAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T03:24:25.66Z",
               "EditorCaption": ""

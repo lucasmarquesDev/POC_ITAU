@@ -1,9 +1,8 @@
 using Confluent.Kafka;
-using MediatR;
 using POC_ITAU.Application.Services;
 using POC_ITAU.Domain.Interfaces;
 using POC_ITAU.Persistence.Kafka;
-using System.Reflection;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +15,7 @@ builder.Services.AddSingleton<IProducer<string, string>>(provider =>
 {
     var config = new ProducerConfig
     {
-        BootstrapServers = "localhost:9092",
+        BootstrapServers = builder.Configuration["Kafka_URI:Kafka_URI"],
         MessageTimeoutMs = 5000,
         RequestTimeoutMs = 5000,
         SocketTimeoutMs = 5000
