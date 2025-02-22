@@ -2,6 +2,6 @@
 {
     public interface IKafkaService
     {
-        Task ProduceAsync(string topic, object notification);
+        Task ProduceAsync<T>(string topic, T notification);
     }
 }

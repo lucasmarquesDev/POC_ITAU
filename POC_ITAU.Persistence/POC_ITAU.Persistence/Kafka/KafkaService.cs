@@ -1,5 +1,4 @@
 ﻿using Confluent.Kafka;
-using POC_ITAU.Domain.Entities.Request;
 using POC_ITAU.Domain.Interfaces;
 using System.Text.Json;
 
@@ -14,7 +13,7 @@ namespace POC_ITAU.Persistence.Kafka
             _producer = producer;
         }
 
-        public async Task ProduceAsync(string topic, object notification)
+        public async Task ProduceAsync<T>(string topic, T notification)
         {
             var message = new Message<string, string>
             {
@@ -22,7 +21,16 @@ namespace POC_ITAU.Persistence.Kafka
                 Value = JsonSerializer.Serialize(notification)
             };
 
-            await _producer.ProduceAsync(topic, message);
+            var deliveryResult = await _producer.ProduceAsync(topic, message);
+
+            if (deliveryResult.Status == PersistenceStatus.Persisted)
+            {
+                Console.WriteLine("Notificação Persistida");
+            }
+            else
+            {
+                throw new KafkaException(ErrorCode.BrokerNotAvailable);
+            }
         }
     }
 }
