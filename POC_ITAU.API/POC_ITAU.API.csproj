@@ -14,4 +14,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\POC_ITAU.Application\POC_ITAU.Application\POC_ITAU.Application.csproj" />
+    <ProjectReference Include="..\POC_ITAU.Domain\POC_ITAU.Domain\POC_ITAU.Domain.csproj" />
+    <ProjectReference Include="..\POC_ITAU.Persistence\POC_ITAU.Persistence\POC_ITAU.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>

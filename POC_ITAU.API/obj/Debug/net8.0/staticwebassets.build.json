@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "yIPfEy5lBqwnaeXec+t51loA/nbdJHYSrs0MLgsJaVQ=",
-  "Source": "POC_ITAU",
-  "BasePath": "_content/POC_ITAU",
+  "Hash": "Yj6ZZ/EH2CGUZ4E/OAkkuhPiQfWRi6wf20frWSMX8w0=",
+  "Source": "POC_ITAU.API",
+  "BasePath": "_content/POC_ITAU.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
