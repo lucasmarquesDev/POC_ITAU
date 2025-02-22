@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("POC_ITAU")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e9ae372a19dfb62f309c1b313b52a562275fe75")]
 [assembly: System.Reflection.AssemblyProductAttribute("POC_ITAU")]
 [assembly: System.Reflection.AssemblyTitleAttribute("POC_ITAU")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

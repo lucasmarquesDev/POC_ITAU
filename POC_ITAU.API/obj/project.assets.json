@@ -521,11 +521,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU\\POC_ITAU.csproj",
-      "projectName": "POC_ITAU",
-      "projectPath": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU\\POC_ITAU.csproj",
+      "projectUniqueName": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\POC_ITAU.API.csproj",
+      "projectName": "POC_ITAU.API",
+      "projectPath": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\POC_ITAU.API.csproj",
       "packagesPath": "C:\\Users\\marqu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU\\obj\\",
+      "outputPath": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\marqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
