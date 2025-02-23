@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Confluent.Kafka;
 using MediatR;
+using Microsoft.Extensions.Logging;
 using Moq;
 using POC_ITAU.Application.UseCases.CreateNotificarion;
 using POC_ITAU.Domain.Interfaces;
@@ -16,12 +17,13 @@ namespace POC_ITAU.IntegrationTest
             // Arrange
             var mockKafkaService = new Mock<IKafkaService>();
             var mockMapper = new Mock<IMapper>();
+            var mockLogger = new Mock<ILogger<CreateNotificarionHandler>>();
 
-            var handler = new CreateNotificarionHandler(mockKafkaService.Object, mockMapper.Object);
+            var handler = new CreateNotificarionHandler(mockKafkaService.Object, mockMapper.Object, mockLogger.Object);
 
-            var request = new CreateNotificarionRequest("test@example.com", "Test Subject", "Test Message");
+            var request = new CreateNotificarionRequest("lunatec09@gmail.com", "POC_ENTREVISTA", "Entrevista");
 
-            var mappedRequest = new CreateNotificarionRequest("test@example.com", "Test Subject", "Test Message");
+            var mappedRequest = new CreateNotificarionRequest("lunatec09@gmail.com", "Test Subject", "Test Message");
 
             mockMapper.Setup(m => m.Map<CreateNotificarionRequest>(request)).Returns(mappedRequest);
 
@@ -39,12 +41,13 @@ namespace POC_ITAU.IntegrationTest
             // Arrange
             var mockKafkaService = new Mock<IKafkaService>();
             var mockMapper = new Mock<IMapper>();
+            var mockLogger = new Mock<ILogger<CreateNotificarionHandler>>();
 
-            var handler = new CreateNotificarionHandler(mockKafkaService.Object, mockMapper.Object);
+            var handler = new CreateNotificarionHandler(mockKafkaService.Object, mockMapper.Object, mockLogger.Object);
 
-            var request = new CreateNotificarionRequest("test@example.com", "Test Subject", "Test Message");
+            var request = new CreateNotificarionRequest("lunatec09@gmail.com", "POC_ENTREVISTA", "Entrevista");
 
-            var mappedRequest = new CreateNotificarionRequest("test@example.com", "Test Subject", "Test Message");
+            var mappedRequest = new CreateNotificarionRequest("lunatec09@gmail.com", "Test Subject", "Test Message");
 
             mockMapper.Setup(m => m.Map<CreateNotificarionRequest>(request)).Returns(mappedRequest);
 
