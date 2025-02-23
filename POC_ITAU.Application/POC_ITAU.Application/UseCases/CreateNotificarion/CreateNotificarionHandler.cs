@@ -1,16 +1,9 @@
 ﻿using AutoMapper;
 using Confluent.Kafka;
 using MediatR;
-using POC_ITAU.Domain.Entities.Request;
 using POC_ITAU.Domain.Interfaces;
 using Polly;
-using Polly.CircuitBreaker;
-using Polly.Fallback;
-using Polly.Retry;
 using Polly.Wrap;
-using System;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace POC_ITAU.Application.UseCases.CreateNotificarion
 {
@@ -44,7 +37,7 @@ namespace POC_ITAU.Application.UseCases.CreateNotificarion
                 .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)),
                     (exception, timeSpan, retryCount, context) =>
                     {
-                        Console.WriteLine($"** [Tentativa {retryCount}] Kafka falhou, tentando novamente em {timeSpan.TotalSeconds}s. Erro: {exception.Message}");
+                        Console.WriteLine($"** [Tentativa {retryCount}] Kafka falhou, tentando novamente em {timeSpan.TotalSeconds}s. Erro: {exception.Message}", ConsoleColor.Red);
                     });
 
             var fallbackPolicy = Policy

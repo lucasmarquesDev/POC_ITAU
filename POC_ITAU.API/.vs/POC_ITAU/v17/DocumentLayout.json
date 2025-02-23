@@ -3,36 +3,62 @@
   "WorkspaceRootPath": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.IntegrationTest\\POC_ITAU.IntegrationTest\\CreateNotificarionTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{72982E3E-F857-41C0-AC9A-BE5952B9C002}|..\\POC_ITAU.Application\\POC_ITAU.Application\\POC_ITAU.Application.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.application\\poc_itau.application\\usecases\\createnotificarion\\createnotificarionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21CDFA29-6EA2-4D6F-9B2F-145564DF7C85}|..\\POC_ITAU.Persistence\\POC_ITAU.Persistence\\POC_ITAU.Persistence.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.persistence\\poc_itau.persistence\\kafka\\kafkaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72982E3E-F857-41C0-AC9A-BE5952B9C002}|..\\POC_ITAU.Application\\POC_ITAU.Application\\POC_ITAU.Application.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.application\\poc_itau.application\\usecases\\createnotificarion\\createnotificarionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6D50FF3-F8F5-4DB5-A973-6A883A049CB2}|POC_ITAU.API.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.api\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6D50FF3-F8F5-4DB5-A973-6A883A049CB2}|POC_ITAU.API.csproj|solutionrelative:controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33747B00-3742-42E9-8836-CE195BC6C478}|..\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.benchmarkperformance\\poc_itau.benchmarkperformance\\benchmarkperformanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72982E3E-F857-41C0-AC9A-BE5952B9C002}|..\\POC_ITAU.Application\\POC_ITAU.Application\\POC_ITAU.Application.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.application\\poc_itau.application\\services\\integrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33747B00-3742-42E9-8836-CE195BC6C478}|..\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.benchmarkperformance\\poc_itau.benchmarkperformance\\poc_itau.benchmarkperformance.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33747B00-3742-42E9-8836-CE195BC6C478}|..\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.benchmarkperformance\\poc_itau.benchmarkperformance\\benchmarkdotnet.artifacts\\poc_itau.benchmarkperformance.benchmarkperformanceservice-20250222-112748.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33747B00-3742-42E9-8836-CE195BC6C478}|..\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.benchmarkperformance\\poc_itau.benchmarkperformance\\benchmarkdotnet.artifacts\\poc_itau.benchmarkperformance.benchmarkperformanceservice-20250222-112821.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72982E3E-F857-41C0-AC9A-BE5952B9C002}|..\\POC_ITAU.Application\\POC_ITAU.Application\\POC_ITAU.Application.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.application\\poc_itau.application\\services\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C6D50FF3-F8F5-4DB5-A973-6A883A049CB2}|POC_ITAU.API.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6D50FF3-F8F5-4DB5-A973-6A883A049CB2}|POC_ITAU.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC869BEF-BAB6-451C-B169-796FF6DAB3B5}|..\\POC_ITAU.Domain\\POC_ITAU.Domain\\POC_ITAU.Domain.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.domain\\poc_itau.domain\\interfaces\\ikafkaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33747B00-3742-42E9-8836-CE195BC6C478}|..\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.benchmarkperformance\\poc_itau.benchmarkperformance\\poc_itau.benchmarkperformance.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC869BEF-BAB6-451C-B169-796FF6DAB3B5}|..\\POC_ITAU.Domain\\POC_ITAU.Domain\\POC_ITAU.Domain.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.domain\\poc_itau.domain\\interfaces\\iintergrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72982E3E-F857-41C0-AC9A-BE5952B9C002}|..\\POC_ITAU.Application\\POC_ITAU.Application\\POC_ITAU.Application.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.application\\poc_itau.application\\services\\integrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D50FF3-F8F5-4DB5-A973-6A883A049CB2}|POC_ITAU.API.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.api\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D50FF3-F8F5-4DB5-A973-6A883A049CB2}|POC_ITAU.API.csproj|solutionrelative:controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72982E3E-F857-41C0-AC9A-BE5952B9C002}|..\\POC_ITAU.Application\\POC_ITAU.Application\\POC_ITAU.Application.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.application\\poc_itau.application\\usecases\\createnotificarion\\createnotificarionmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72982E3E-F857-41C0-AC9A-BE5952B9C002}|..\\POC_ITAU.Application\\POC_ITAU.Application\\POC_ITAU.Application.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.application\\poc_itau.application\\usecases\\createnotificarion\\createnotificarionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6D50FF3-F8F5-4DB5-A973-6A883A049CB2}|POC_ITAU.API.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C6D50FF3-F8F5-4DB5-A973-6A883A049CB2}|POC_ITAU.API.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72982E3E-F857-41C0-AC9A-BE5952B9C002}|..\\POC_ITAU.Application\\POC_ITAU.Application\\POC_ITAU.Application.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.application\\poc_itau.application\\services\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6D50FF3-F8F5-4DB5-A973-6A883A049CB2}|POC_ITAU.API.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C6D50FF3-F8F5-4DB5-A973-6A883A049CB2}|POC_ITAU.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21CDFA29-6EA2-4D6F-9B2F-145564DF7C85}|..\\POC_ITAU.Persistence\\POC_ITAU.Persistence\\POC_ITAU.Persistence.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.persistence\\poc_itau.persistence\\kafka\\kafkaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC869BEF-BAB6-451C-B169-796FF6DAB3B5}|..\\POC_ITAU.Domain\\POC_ITAU.Domain\\POC_ITAU.Domain.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.domain\\poc_itau.domain\\interfaces\\ikafkaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC869BEF-BAB6-451C-B169-796FF6DAB3B5}|..\\POC_ITAU.Domain\\POC_ITAU.Domain\\POC_ITAU.Domain.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.domain\\poc_itau.domain\\interfaces\\iintergrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72982E3E-F857-41C0-AC9A-BE5952B9C002}|..\\POC_ITAU.Application\\POC_ITAU.Application\\POC_ITAU.Application.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.application\\poc_itau.application\\usecases\\createnotificarion\\createnotificarionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -48,16 +74,8 @@
       "RelativeMoniker": "D:0:0:{C6D50FF3-F8F5-4DB5-A973-6A883A049CB2}|POC_ITAU.API.csproj|solutionrelative:poc_itau.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6D50FF3-F8F5-4DB5-A973-6A883A049CB2}|POC_ITAU.API.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C6D50FF3-F8F5-4DB5-A973-6A883A049CB2}|POC_ITAU.API.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C6D50FF3-F8F5-4DB5-A973-6A883A049CB2}|POC_ITAU.API.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{C6D50FF3-F8F5-4DB5-A973-6A883A049CB2}|POC_ITAU.API.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6D50FF3-F8F5-4DB5-A973-6A883A049CB2}|POC_ITAU.API.csproj|c:\\users\\marqu\\source\\repos\\poc_itau\\poc_itau.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C6D50FF3-F8F5-4DB5-A973-6A883A049CB2}|POC_ITAU.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,84 +100,202 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CreateNotificarionMapper.cs",
-              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionMapper.cs",
-              "RelativeDocumentMoniker": "..\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionMapper.cs",
-              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionMapper.cs",
-              "RelativeToolTip": "..\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionMapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T03:46:10.998Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CreateNotificarionHandler.cs",
-              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionHandler.cs",
-              "RelativeDocumentMoniker": "..\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionHandler.cs",
-              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionHandler.cs*",
-              "RelativeToolTip": "..\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionHandler.cs*",
-              "ViewState": "AQIAAD8AAAAAAAAAAAD4v1QAAAAiAAAA",
+              "Title": "CreateNotificarionTests.cs",
+              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.IntegrationTest\\POC_ITAU.IntegrationTest\\CreateNotificarionTests.cs",
+              "RelativeDocumentMoniker": "..\\POC_ITAU.IntegrationTest\\POC_ITAU.IntegrationTest\\CreateNotificarionTests.cs",
+              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.IntegrationTest\\POC_ITAU.IntegrationTest\\CreateNotificarionTests.cs",
+              "RelativeToolTip": "..\\POC_ITAU.IntegrationTest\\POC_ITAU.IntegrationTest\\CreateNotificarionTests.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T03:45:26.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T01:01:48.339Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IntegrationService.cs",
-              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\IntegrationService.cs",
-              "RelativeDocumentMoniker": "..\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\IntegrationService.cs",
-              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\IntegrationService.cs",
-              "RelativeToolTip": "..\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\IntegrationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T02:50:09.352Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IIntergrationService.cs",
-              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Domain\\POC_ITAU.Domain\\Interfaces\\IIntergrationService.cs",
-              "RelativeDocumentMoniker": "..\\POC_ITAU.Domain\\POC_ITAU.Domain\\Interfaces\\IIntergrationService.cs",
-              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Domain\\POC_ITAU.Domain\\Interfaces\\IIntergrationService.cs",
-              "RelativeToolTip": "..\\POC_ITAU.Domain\\POC_ITAU.Domain\\Interfaces\\IIntergrationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T02:53:33.422Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NotificationController.cs",
-              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\Controllers\\NotificationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\NotificationController.cs",
-              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\Controllers\\NotificationController.cs",
-              "RelativeToolTip": "Controllers\\NotificationController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAawBUAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T02:27:18.261Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "POC_ITAU.BenchmarkPerformance.BenchmarkPerformanceService-20250222-112748.log",
+              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\BenchmarkDotNet.Artifacts\\POC_ITAU.BenchmarkPerformance.BenchmarkPerformanceService-20250222-112748.log",
+              "RelativeDocumentMoniker": "..\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\BenchmarkDotNet.Artifacts\\POC_ITAU.BenchmarkPerformance.BenchmarkPerformanceService-20250222-112748.log",
+              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\BenchmarkDotNet.Artifacts\\POC_ITAU.BenchmarkPerformance.BenchmarkPerformanceService-20250222-112748.log",
+              "RelativeToolTip": "..\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\BenchmarkDotNet.Artifacts\\POC_ITAU.BenchmarkPerformance.BenchmarkPerformanceService-20250222-112748.log",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAACNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-22T14:31:09.089Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "POC_ITAU.BenchmarkPerformance.csproj",
+              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance.csproj",
+              "RelativeDocumentMoniker": "..\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance.csproj",
+              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance.csproj",
+              "RelativeToolTip": "..\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance.csproj",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-22T14:18:30.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BenchmarkPerformanceService.cs",
+              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\BenchmarkPerformanceService.cs",
+              "RelativeDocumentMoniker": "..\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\BenchmarkPerformanceService.cs",
+              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\BenchmarkPerformanceService.cs",
+              "RelativeToolTip": "..\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\BenchmarkPerformanceService.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAuwDkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T13:58:38.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateNotificarionHandler.cs",
+              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionHandler.cs",
+              "RelativeDocumentMoniker": "..\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionHandler.cs",
+              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionHandler.cs",
+              "RelativeToolTip": "..\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T03:45:26.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateNotificarionRequest.cs",
+              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionRequest.cs",
+              "RelativeDocumentMoniker": "..\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionRequest.cs",
+              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionRequest.cs",
+              "RelativeToolTip": "..\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T03:46:20.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "POC_ITAU.BenchmarkPerformance",
+              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance.csproj",
+              "RelativeDocumentMoniker": "..\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance.csproj",
+              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance.csproj",
+              "RelativeToolTip": "..\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-22T14:27:32.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "POC_ITAU.BenchmarkPerformance.BenchmarkPerformanceService-20250222-112821.log",
+              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\BenchmarkDotNet.Artifacts\\POC_ITAU.BenchmarkPerformance.BenchmarkPerformanceService-20250222-112821.log",
+              "RelativeDocumentMoniker": "..\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\BenchmarkDotNet.Artifacts\\POC_ITAU.BenchmarkPerformance.BenchmarkPerformanceService-20250222-112821.log",
+              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\BenchmarkDotNet.Artifacts\\POC_ITAU.BenchmarkPerformance.BenchmarkPerformanceService-20250222-112821.log",
+              "RelativeToolTip": "..\\POC_ITAU.BenchmarkPerformance\\POC_ITAU.BenchmarkPerformance\\BenchmarkDotNet.Artifacts\\POC_ITAU.BenchmarkPerformance.BenchmarkPerformanceService-20250222-112821.log",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-22T14:31:12.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T02:19:33.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T02:19:33.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ServiceExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\ServiceExtensions.cs",
+              "RelativeDocumentMoniker": "..\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\ServiceExtensions.cs",
+              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\ServiceExtensions.cs",
+              "RelativeToolTip": "..\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\ServiceExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T04:13:53.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-22T02:19:45.094Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\Controllers\\NotificationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NotificationController.cs",
+              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\Controllers\\NotificationController.cs",
+              "RelativeToolTip": "Controllers\\NotificationController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAawBYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T02:27:18.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateNotificarionMapper.cs",
+              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionMapper.cs",
+              "RelativeDocumentMoniker": "..\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionMapper.cs",
+              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionMapper.cs",
+              "RelativeToolTip": "..\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T03:46:10.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IntegrationService.cs",
+              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\IntegrationService.cs",
+              "RelativeDocumentMoniker": "..\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\IntegrationService.cs",
+              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\IntegrationService.cs",
+              "RelativeToolTip": "..\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\IntegrationService.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAwwBAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T02:50:09.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "KafkaService.cs",
+              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Persistence\\POC_ITAU.Persistence\\Kafka\\KafkaService.cs",
+              "RelativeDocumentMoniker": "..\\POC_ITAU.Persistence\\POC_ITAU.Persistence\\Kafka\\KafkaService.cs",
+              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Persistence\\POC_ITAU.Persistence\\Kafka\\KafkaService.cs",
+              "RelativeToolTip": "..\\POC_ITAU.Persistence\\POC_ITAU.Persistence\\Kafka\\KafkaService.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T03:24:25.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IKafkaService.cs",
+              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Domain\\POC_ITAU.Domain\\Interfaces\\IKafkaService.cs",
+              "RelativeDocumentMoniker": "..\\POC_ITAU.Domain\\POC_ITAU.Domain\\Interfaces\\IKafkaService.cs",
+              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Domain\\POC_ITAU.Domain\\Interfaces\\IKafkaService.cs",
+              "RelativeToolTip": "..\\POC_ITAU.Domain\\POC_ITAU.Domain\\Interfaces\\IKafkaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T03:39:26.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Notification.cs",
               "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Domain\\POC_ITAU.Domain\\Entities\\Request\\Notification.cs",
               "RelativeDocumentMoniker": "..\\POC_ITAU.Domain\\POC_ITAU.Domain\\Entities\\Request\\Notification.cs",
@@ -171,57 +307,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "KafkaService.cs",
-              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Persistence\\POC_ITAU.Persistence\\Kafka\\KafkaService.cs",
-              "RelativeDocumentMoniker": "..\\POC_ITAU.Persistence\\POC_ITAU.Persistence\\Kafka\\KafkaService.cs",
-              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Persistence\\POC_ITAU.Persistence\\Kafka\\KafkaService.cs",
-              "RelativeToolTip": "..\\POC_ITAU.Persistence\\POC_ITAU.Persistence\\Kafka\\KafkaService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T03:24:25.66Z",
-              "EditorCaption": ""
+              "DocumentIndex": 13,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-22T02:19:51.972Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IKafkaService.cs",
-              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Domain\\POC_ITAU.Domain\\Interfaces\\IKafkaService.cs",
-              "RelativeDocumentMoniker": "..\\POC_ITAU.Domain\\POC_ITAU.Domain\\Interfaces\\IKafkaService.cs",
-              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Domain\\POC_ITAU.Domain\\Interfaces\\IKafkaService.cs",
-              "RelativeToolTip": "..\\POC_ITAU.Domain\\POC_ITAU.Domain\\Interfaces\\IKafkaService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 17,
+              "Title": "IIntergrationService.cs",
+              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Domain\\POC_ITAU.Domain\\Interfaces\\IIntergrationService.cs",
+              "RelativeDocumentMoniker": "..\\POC_ITAU.Domain\\POC_ITAU.Domain\\Interfaces\\IIntergrationService.cs",
+              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Domain\\POC_ITAU.Domain\\Interfaces\\IIntergrationService.cs",
+              "RelativeToolTip": "..\\POC_ITAU.Domain\\POC_ITAU.Domain\\Interfaces\\IIntergrationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T03:39:26.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T02:53:33.422Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ServiceExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\ServiceExtensions.cs",
-              "RelativeDocumentMoniker": "..\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\ServiceExtensions.cs",
-              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\ServiceExtensions.cs",
-              "RelativeToolTip": "..\\POC_ITAU.Application\\POC_ITAU.Application\\Services\\ServiceExtensions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T04:13:53.052Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CreateNotificarionRequest.cs",
-              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionRequest.cs",
-              "RelativeDocumentMoniker": "..\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionRequest.cs",
-              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionRequest.cs",
-              "RelativeToolTip": "..\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T03:46:20.945Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "CreateNotificarionResponse.cs",
               "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionResponse.cs",
               "RelativeDocumentMoniker": "..\\POC_ITAU.Application\\POC_ITAU.Application\\UseCases\\CreateNotificarion\\CreateNotificarionResponse.cs",
@@ -233,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "POC_ITAU.Persistence.csproj",
               "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.Persistence\\POC_ITAU.Persistence\\POC_ITAU.Persistence.csproj",
               "RelativeDocumentMoniker": "..\\POC_ITAU.Persistence\\POC_ITAU.Persistence\\POC_ITAU.Persistence.csproj",
@@ -245,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "POC_ITAU.API.csproj",
               "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\POC_ITAU.API.csproj",
               "RelativeDocumentMoniker": "POC_ITAU.API.csproj",
@@ -257,19 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-22T02:19:51.972Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -278,18 +376,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-02-22T02:19:50.858Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-22T02:19:45.094Z"
             }
           ]
         }
