@@ -9,17 +9,17 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["POC_ITAU.csproj", "."]
-RUN dotnet restore "./POC_ITAU.csproj"
+COPY ["POC_ITAU.API.csproj", "."]
+RUN dotnet restore "./POC_ITAU.API.csproj"
 COPY . .
 WORKDIR "/src/."
-RUN dotnet build "./POC_ITAU.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "./POC_ITAU.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./POC_ITAU.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./POC_ITAU.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "POC_ITAU.dll"]
+ENTRYPOINT ["dotnet", "POC_ITAU.API.dll"]
