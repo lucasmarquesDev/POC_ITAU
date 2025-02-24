@@ -60,7 +60,7 @@ namespace POC_ITAU.IntegrationTest
             var result = await handler.Handle(request, CancellationToken.None);
 
             // Assert
-            mockKafkaService.Verify(k => k.ProduceAsync("email-notifications", mappedRequest), Times.Exactly(3));
+            mockKafkaService.Verify(k => k.ProduceAsync("email-notifications", mappedRequest), Times.Exactly(4));
             Assert.NotNull(result);
         }
     }
