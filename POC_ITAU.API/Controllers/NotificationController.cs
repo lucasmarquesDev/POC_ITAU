@@ -20,6 +20,8 @@ namespace POC_ITAU.Controllers
         [HttpPost("sendEmail")]
         public async Task<IActionResult> SendEmail([FromBody] Notification notification)
         {
+            _logger.LogInformation($"** Processando notificação para email {notification.Destination}");
+
             await _integrationService.SendNotifcation(notification);
 
             return Ok();

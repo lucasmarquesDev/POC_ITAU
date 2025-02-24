@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
-namespace POC_ITAU.Application.Services
+namespace POC_ITAU.Application.Extensions
 {
     public static class ServiceExtensions
     {

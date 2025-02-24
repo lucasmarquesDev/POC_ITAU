@@ -1,4 +1,5 @@
 ﻿using Confluent.Kafka;
+using Microsoft.Extensions.Logging;
 using POC_ITAU.Domain.Interfaces;
 using System.Text.Json;
 
@@ -7,10 +8,12 @@ namespace POC_ITAU.Persistence.Kafka
     public class KafkaService : IKafkaService
     {
         private readonly IProducer<string, string> _producer;
+        private readonly ILogger<KafkaService> _logger;
 
-        public KafkaService(IProducer<string, string> producer)
+        public KafkaService(IProducer<string, string> producer, ILogger<KafkaService> logger)
         {
             _producer = producer;
+            _logger = logger;
         }
 
         public async Task ProduceAsync<T>(string topic, T notification)
@@ -25,7 +28,7 @@ namespace POC_ITAU.Persistence.Kafka
 
             if (deliveryResult.Status == PersistenceStatus.Persisted)
             {
-                Console.WriteLine("Notificação Persistida");
+                _logger.LogInformation("Notificação Persistida");
             }
             else
             {

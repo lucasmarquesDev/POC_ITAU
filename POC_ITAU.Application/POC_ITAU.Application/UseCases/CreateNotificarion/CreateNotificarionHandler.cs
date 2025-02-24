@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Confluent.Kafka;
 using MediatR;
+using Microsoft.Extensions.Logging;
 using POC_ITAU.Domain.Interfaces;
 using Polly;
 using Polly.Wrap;
@@ -12,11 +13,13 @@ namespace POC_ITAU.Application.UseCases.CreateNotificarion
         private readonly IKafkaService _kafkaService;
         private readonly IMapper _mapper;
         private readonly AsyncPolicyWrap _policy;
+        private readonly ILogger<CreateNotificarionHandler> _logger;
 
-        public CreateNotificarionHandler(IKafkaService kafkaService, IMapper mapper)
+        public CreateNotificarionHandler(IKafkaService kafkaService, IMapper mapper, ILogger<CreateNotificarionHandler> logger)
         {
             _kafkaService = kafkaService;
             _mapper = mapper;
+            _logger = logger;
 
             var circuitBreakerPolicy = Policy
                 .Handle<KafkaException>()
@@ -24,11 +27,11 @@ namespace POC_ITAU.Application.UseCases.CreateNotificarion
                 .CircuitBreakerAsync(3, TimeSpan.FromMinutes(1),
                     onBreak: (exception, duration) =>
                     {
-                        Console.WriteLine($"** Circuito ABERTO devido a falhas repetidas no Kafka. Tentando novamente em {duration.TotalSeconds}s");
+                        _logger.LogWarning($"** Circuito ABERTO devido a falhas repetidas no Kafka. Tentando novamente em {duration.TotalSeconds}s");
                     },
                     onReset: () =>
                     {
-                        Console.WriteLine("** Circuito FECHADO: Kafka voltou a responder.");
+                        _logger.LogInformation("** Circuito FECHADO: Kafka voltou a responder.");
                     });
 
             var retryPolicy = Policy
@@ -37,7 +40,7 @@ namespace POC_ITAU.Application.UseCases.CreateNotificarion
                 .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)),
                     (exception, timeSpan, retryCount, context) =>
                     {
-                        Console.WriteLine($"** [Tentativa {retryCount}] Kafka falhou, tentando novamente em {timeSpan.TotalSeconds}s. Erro: {exception.Message}", ConsoleColor.Red);
+                        _logger.LogWarning($"** [Tentativa {retryCount}] Kafka falhou, tentando novamente em {timeSpan.TotalSeconds}s. Erro: {exception.Message}", ConsoleColor.Red);
                     });
 
             var fallbackPolicy = Policy
@@ -45,7 +48,7 @@ namespace POC_ITAU.Application.UseCases.CreateNotificarion
                 .Or<TimeoutException>()
                 .FallbackAsync(async (cancellationToken) =>
                 {
-                    Console.WriteLine("** Kafka indisponível! Salvando mensagem para reprocessamento...");
+                    _logger.LogWarning("** Kafka indisponível! Salvando mensagem para reprocessamento...");
                     await SaveMessageForLaterAsync();
                 });
 
@@ -65,7 +68,7 @@ namespace POC_ITAU.Application.UseCases.CreateNotificarion
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"** Erro ao processar a notificação: {ex.Message}");
+                _logger.LogWarning($"** Erro ao processar a notificação: {ex.Message}");
             }
 
             return new CreateNotificarionResponse();
@@ -73,9 +76,8 @@ namespace POC_ITAU.Application.UseCases.CreateNotificarion
 
         private async Task SaveMessageForLaterAsync()
         {
-            // Simulação de salvar no banco de dados para reprocessar depois
             await Task.Delay(500);
-            Console.WriteLine("** Mensagem salva para reprocessamento futuro.");
+            _logger.LogWarning("** Mensagem salva para reprocessamento futuro.");
         }
     }
 }
