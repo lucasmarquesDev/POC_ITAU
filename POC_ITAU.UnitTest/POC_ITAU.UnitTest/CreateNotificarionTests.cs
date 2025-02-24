@@ -51,7 +51,7 @@ namespace POC_ITAU.IntegrationTest
 
             mockMapper.Setup(m => m.Map<CreateNotificarionRequest>(request)).Returns(mappedRequest);
 
-            // Simula uma falha no Kafka
+            //falha
             mockKafkaService
                 .Setup(k => k.ProduceAsync("email-notifications", mappedRequest))
                 .ThrowsAsync(new KafkaException(ErrorCode.BrokerNotAvailable));
