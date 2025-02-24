@@ -1,10 +1,6 @@
-Aqui está o `README.md` completo, incluindo a explicação do CI/CD configurado para deploy no Amazon ECR:
+# POC ITAU - Serviço Producer
 
----
-
-# POC ITAU - Seviço producer
-
-Este projeto é uma POC um serviço producer de notificações utilizando **Kafka** para mensageria, **MediatR** para implementação do padrão CQRS, **Polly** para resiliência, **OpenTelemetry** para observabilidade e **BenchmarkDotNet** para medição de desempenho.
+Este projeto é uma POC de um serviço producer de notificações utilizando **Kafka** para mensageria, **MediatR** para implementação do padrão CQRS, **Polly** para resiliência, **OpenTelemetry** para observabilidade e **BenchmarkDotNet** para medição de desempenho. No padrão arquitetural Clean Architecture
 
 ## Tecnologias Utilizadas
 
@@ -14,7 +10,6 @@ Este projeto é uma POC um serviço producer de notificações utilizando **Kafk
 - **Polly**: Biblioteca para políticas de resiliência (retry, circuit breaker, fallback).
 - **OpenTelemetry**: Ferramenta para rastreamento e métricas.
 - **BenchmarkDotNet**: Biblioteca para benchmarking de desempenho.
-- **Datadog**: Plataforma de observabilidade e monitoramento.
 - **Xunit**: Framework para testes unitários e de integração.
 
 ## Estrutura do Projeto
@@ -49,7 +44,6 @@ O projeto está organizado da seguinte forma:
 
 2. **Observabilidade**:
    - Utiliza OpenTelemetry para rastreamento e métricas.
-   - Integra com Datadog para monitoramento centralizado.
 
 3. **Benchmarking**:
    - Mede o desempenho do caso de uso de criação de notificações.
@@ -62,13 +56,55 @@ O projeto está organizado da seguinte forma:
 ### Pré-requisitos
 
 - [.NET SDK](https://dotnet.microsoft.com/download) instalado.
-- [Docker](https://www.docker.com/) para rodar o Kafka localmente.
+- [Docker](https://www.docker.com/) para rodar o Kafka e o Jaeger localmente.
 
-## CI/CD - Deploy para Amazon ECR
+### Rodando com Docker Compose
+
+O projeto inclui um arquivo `docker-compose.yml` para facilitar a execução de todas as dependências (Kafka, Jaeger) e a aplicação em contêineres Docker.
+
+#### Passos para Execução:
+
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/lucasmarquesDev/POC_ITAU.git
+   cd POC_ITAU
+   ```
+
+2. **Suba os contêineres**:
+   Execute o seguinte comando para subir todos os serviços (Zookeeper, Kafka, Jaeger e a aplicação):
+   ```bash
+   docker-compose up --build
+   ```
+
+   Isso irá:
+   - Iniciar o Zookeeper e o Kafka.
+   - Iniciar o Jaeger para rastreamento distribuído.
+   - Construir e iniciar a aplicação.
+
+3. **Acesse a aplicação**:
+   - A API estará disponível em `http://localhost:8080`.
+   - O Jaeger UI estará disponível em `http://localhost:16686` para visualizar os traces.
+
+4. **Envie uma notificação**:
+   - Faça uma requisição POST para o endpoint `/notification/sendEmail` com o seguinte corpo:
+     ```json
+     {
+       "destination": "test@example.com",
+       "subject": "Test Subject",
+       "message": "Test Message"
+     }
+     ```
+
+5. **Verifique os traces no Jaeger**:
+   - Acesse o Jaeger UI (`http://localhost:16686`) para visualizar os traces gerados pela aplicação.
+
+---
+
+### CI/CD - Deploy para Amazon ECR
 
 O projeto inclui um pipeline de CI/CD configurado no GitHub Actions para fazer o deploy da aplicação no **Amazon Elastic Container Registry (ECR)**. O pipeline é acionado sempre que há um push para a branch `main`.
 
-### Passos do Pipeline
+#### Passos do Pipeline
 
 1. **Checkout do código**:
    - O código é clonado do repositório.
@@ -84,3 +120,55 @@ O projeto inclui um pipeline de CI/CD configurado no GitHub Actions para fazer o
 
 5. **Build, tag e push da imagem Docker**:
    - A imagem Docker é construída, taggeada com `latest` e enviada para o repositório no ECR.
+
+---
+
+### Estrutura do `docker-compose.yml`
+
+O arquivo `docker-compose.yml` define os seguintes serviços:
+
+1. **Zookeeper**:
+   - Serviço necessário para gerenciar o Kafka.
+   - Expõe a porta `22181` para o host.
+
+2. **Kafka**:
+   - Serviço de mensageria distribuída.
+   - Expõe a porta `29092` para o host.
+   - Configurado para se conectar ao Zookeeper.
+
+3. **Jaeger**:
+   - Serviço de rastreamento distribuído.
+   - Expõe as portas `16686` (UI), `6831/udp` (Agente) e `4317` (OTLP gRPC).
+
+4. **App**:
+   - Aplicação principal.
+   - Depende do Kafka e do Jaeger.
+   - Expõe as portas `8080` e `8081` para o host.
+
+---
+
+### Exemplo de Requisição
+
+Para enviar uma notificação, faça uma requisição POST para o endpoint `/notification/sendEmail`:
+
+**Endpoint**:
+```
+POST http://localhost:8080/notification/sendEmail
+```
+
+**Corpo da Requisição**:
+```json
+{
+  "destination": "test@example.com",
+  "subject": "Test Subject",
+  "message": "Test Message"
+}
+```
+
+---
+
+### Contribuição
+
+Contribuições são bem-vindas!
+
+---

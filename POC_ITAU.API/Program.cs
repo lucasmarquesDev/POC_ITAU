@@ -6,23 +6,12 @@ using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using POC_ITAU.API.Middlewares;
 using POC_ITAU.Application.Services;
+using POC_ITAU.Application.Extensions;
 using POC_ITAU.Domain.Interfaces;
 using POC_ITAU.Persistence.Kafka;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
-
-string datadogApiKey = "e9b7e7461742585d9859e20368b009f6";  // 🔥 Insira sua API Key do Datadog
-string datadogEndpoint = "https://otel.datadoghq.com"; // Endpoint oficial da Datadog para OpenTelemetry
-
-Log.Logger = new LoggerConfiguration()
-    .WriteTo.DatadogLogs(
-        "https://http-intake.logs.datadoghq.com",
-        datadogApiKey,
-        "poc-itau", // Nome da fonte do log
-        "poc-itau-service" // Nome do serviço
-    )
-    .CreateLogger();
 
 // Configuração do OpenTelemetry
 builder.Services.AddOpenTelemetry()
@@ -34,22 +23,18 @@ builder.Services.AddOpenTelemetry()
             .AddAspNetCoreInstrumentation()
             .AddHttpClientInstrumentation()
             .AddConsoleExporter()
-            .AddOtlpExporter(options =>
+            .AddJaegerExporter(options =>
             {
-                options.Endpoint = new Uri(datadogEndpoint);
-                options.Headers = $"api-key={datadogApiKey}";
+                options.AgentHost = builder.Configuration["Jaeger:Jaeger_URI"];
+                options.AgentPort = Convert.ToInt32(builder.Configuration["Jaeger:Jaeger_Port"]);
+                options.Protocol = OpenTelemetry.Exporter.JaegerExportProtocol.UdpCompactThrift;  
             });
     })
     .WithMetrics(metricsProviderBuilder =>
     {
         metricsProviderBuilder
             .AddAspNetCoreInstrumentation()
-            .AddConsoleExporter()
-            .AddOtlpExporter(options =>
-            {
-                options.Endpoint = new Uri(datadogEndpoint);
-                options.Headers = $"api-key={datadogApiKey}";
-            });
+            .AddConsoleExporter();
     });
 
 builder.Logging.AddOpenTelemetry(options =>
@@ -57,12 +42,6 @@ builder.Logging.AddOpenTelemetry(options =>
     options.IncludeFormattedMessage = true;
     options.IncludeScopes = true;
     options.ParseStateValues = true;
-
-    options.AddOtlpExporter(otlpOptions =>
-    {
-        otlpOptions.Endpoint = new Uri("https://otlp.logs.datadoghq.com");
-        otlpOptions.Headers = $"api-key={datadogApiKey}";
-    });
 });
 
 builder.Services.ConfigureApplicationApp();
