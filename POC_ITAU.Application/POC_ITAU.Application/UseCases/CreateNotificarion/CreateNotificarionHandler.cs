@@ -24,10 +24,10 @@ namespace POC_ITAU.Application.UseCases.CreateNotificarion
             var circuitBreakerPolicy = Policy
                 .Handle<KafkaException>()
                 .Or<TimeoutException>()
-                .CircuitBreakerAsync(3, TimeSpan.FromMinutes(1),
+                .CircuitBreakerAsync(4, TimeSpan.FromMinutes(1),
                     onBreak: (exception, duration) =>
                     {
-                        _logger.LogWarning($"** Circuito ABERTO devido a falhas repetidas no Kafka. Tentando novamente em {duration.TotalSeconds}s");
+                        _logger.LogCritical($"** Circuito ABERTO devido a falhas repetidas no Kafka. Tentando novamente em {duration.TotalSeconds}s");
                     },
                     onReset: () =>
                     {
@@ -48,7 +48,7 @@ namespace POC_ITAU.Application.UseCases.CreateNotificarion
                 .Or<TimeoutException>()
                 .FallbackAsync(async (cancellationToken) =>
                 {
-                    _logger.LogWarning("** Kafka indisponível! Salvando mensagem para reprocessamento...");
+                    _logger.LogError("** Kafka indisponível! Salvando mensagem para reprocessamento...");
                     await SaveMessageForLaterAsync();
                 });
 
@@ -68,7 +68,7 @@ namespace POC_ITAU.Application.UseCases.CreateNotificarion
             }
             catch (Exception ex)
             {
-                _logger.LogWarning($"** Erro ao processar a notificação: {ex.Message}");
+                _logger.LogError($"** Erro ao processar a notificação: {ex.Message}");
             }
 
             return new CreateNotificarionResponse();
