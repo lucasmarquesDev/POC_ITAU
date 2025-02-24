@@ -61,8 +61,10 @@ O projeto está organizado da seguinte forma:
 
 ### Pré-requisitos
 
-- [.NET SDK](https://dotnet.microsoft.com/download) instalado.
-- [Docker](https://www.docker.com/) para rodar o Kafka e o ElasticSearch localmente.
+- [.NET SDK
+](https: //dotnet.microsoft.com/download) instalado.
+- [Docker
+](https: //www.docker.com/) para rodar o Kafka e o ElasticSearch localmente.
 
 ### Rodando com Docker Compose
 
@@ -72,7 +74,7 @@ O projeto inclui um arquivo `docker-compose.yml` para facilitar a execução de 
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/lucasmarquesDev/POC_ITAU.git
+   git clone https: //github.com/lucasmarquesDev/POC_ITAU.git
    cd POC_ITAU
    ```
 
@@ -88,16 +90,16 @@ O projeto inclui um arquivo `docker-compose.yml` para facilitar a execução de 
    - Construir e iniciar a aplicação.
 
 3. **Acesse a aplicação**:
-   - A API estará disponível em `http://localhost:8080`.
+   - A API estará disponível em `http: //localhost:8080`.
 
 4. **Envie uma notificação**:
    - Faça uma requisição POST para o endpoint `/notification/sendEmail` com o seguinte corpo:
      ```json
      {
-       "destination": "test@example.com",
-       "subject": "Test Subject",
-       "message": "Test Message"
-     }
+    "destination": "test@example.com",
+    "subject": "Test Subject",
+    "message": "Test Message"
+}
      ```
 
 5. **Verifique as métricas no ElasticSearch**:
@@ -153,15 +155,15 @@ Para enviar uma notificação, faça uma requisição POST para o endpoint `/not
 
 **Endpoint**:
 ```
-POST http://localhost:8080/notification/sendEmail
+POST http: //localhost:8080/notification/sendEmail
 ```
 
 **Corpo da Requisição**:
 ```json
 {
-  "destination": "test@example.com",
-  "subject": "Test Subject",
-  "message": "Test Message"
+    "destination": "test@example.com",
+    "subject": "Test Subject",
+    "message": "Test Message"
 }
 ```
 

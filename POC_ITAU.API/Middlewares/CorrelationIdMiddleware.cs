@@ -23,13 +23,13 @@ namespace POC_ITAU.API.Middlewares
 
             // Obtém ou cria a atividade de tracing atual
             var activity = Activity.Current ?? new Activity("Incoming Request");
-            activity.SetTag("correlation_id", correlationId);
+            activity.SetTag("correlation_id_app", correlationId);
             activity.Start();
 
             // Adiciona o Correlation ID ao cabeçalho de resposta
             context.Response.Headers["X-Correlation-ID"] = correlationId;
 
-            _logger.LogInformation("Correlation ID: {CorrelationId}, Trace ID: {TraceId}", correlationId, activity.TraceId);
+            _logger.LogInformation("** Correlation ID: {CorrelationId}, Trace ID: {TraceId}", correlationId, activity.TraceId);
 
             using (_logger.BeginScope("{CorrelationId}", correlationId))
             {
