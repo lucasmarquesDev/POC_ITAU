@@ -1,11 +1,14 @@
-﻿using Confluent.Kafka;
-using POC_ITAU.API.Middlewares;
+﻿using POC_ITAU.API.Middlewares;
 using POC_ITAU.API.Extensions;
 using POC_ITAU.Application.Services;
 using POC_ITAU.Application.Extensions;
 using POC_ITAU.Domain.Interfaces;
-using POC_ITAU.Persistence.Kafka;
+using POC_ITAU.Persistence.SNS;
 using Serilog;
+using Amazon.SimpleNotificationService;
+using POC_ITAU.Domain.Entities;
+using Amazon.Runtime;
+using Amazon;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,23 +19,18 @@ builder.Services.AddElasticsearch(builder.Configuration);
 
 builder.Services.ConfigureApplicationApp();
 
-// Add services to the container.
 builder.Services.AddTransient<IIntergrationService, IntegrationService>();
 
-builder.Services.AddSingleton(provider =>
-{
-    var config = new ProducerConfig
-    {
-        BootstrapServers = builder.Configuration["Kafka:Kafka_URI"],
-        MessageTimeoutMs = 5000,
-        RequestTimeoutMs = 5000,
-        SocketTimeoutMs = 5000
-    };
+var awsSettings = builder.Configuration.GetSection("AWS").Get<AWSSettings>();
 
-    return new ProducerBuilder<string, string>(config).Build();
-});
+builder.Services.AddSingleton(awsSettings);
 
-builder.Services.AddSingleton<IKafkaService, KafkaService>();
+var credentials = new BasicAWSCredentials(awsSettings.AccessKey, awsSettings.SecretKey);
+var snsClient = new AmazonSimpleNotificationServiceClient(credentials, RegionEndpoint.GetBySystemName(awsSettings.Region));
+
+builder.Services.AddSingleton<IAmazonSimpleNotificationService>(snsClient);
+builder.Services.AddSingleton<ISNSService, SNSService>();
+
 
 builder.Services.AddHealthChecks();
 
@@ -47,7 +45,6 @@ app.UseMiddleware<CorrelationIdMiddleware>();
 
 app.UseSerilog();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

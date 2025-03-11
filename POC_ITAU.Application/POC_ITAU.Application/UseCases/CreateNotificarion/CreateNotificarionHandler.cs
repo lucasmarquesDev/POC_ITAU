@@ -2,6 +2,8 @@
 using Confluent.Kafka;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using POC_ITAU.Domain.Entities;
 using POC_ITAU.Domain.Interfaces;
 using Polly;
 using Polly.Wrap;
@@ -10,45 +12,47 @@ namespace POC_ITAU.Application.UseCases.CreateNotificarion
 {
     public class CreateNotificarionHandler : IRequestHandler<CreateNotificarionRequest, CreateNotificarionResponse>
     {
-        private readonly IKafkaService _kafkaService;
+        private readonly ISNSService _snsService;
         private readonly IMapper _mapper;
         private readonly AsyncPolicyWrap _policy;
+        private readonly IOptions<AWSSettings> _awsSettings;
         private readonly ILogger<CreateNotificarionHandler> _logger;
 
-        public CreateNotificarionHandler(IKafkaService kafkaService, IMapper mapper, ILogger<CreateNotificarionHandler> logger)
+        public CreateNotificarionHandler(ISNSService snsService, IMapper mapper, IOptions<AWSSettings> awsSettings, ILogger<CreateNotificarionHandler> logger)
         {
-            _kafkaService = kafkaService;
+            _snsService = snsService;
             _mapper = mapper;
+            _awsSettings = awsSettings;
             _logger = logger;
 
             var circuitBreakerPolicy = Policy
-                .Handle<KafkaException>()
+                .Handle<Exception>()
                 .Or<TimeoutException>()
                 .CircuitBreakerAsync(4, TimeSpan.FromMinutes(1),
                     onBreak: (exception, duration) =>
                     {
-                        _logger.LogCritical($"** Circuito ABERTO devido a falhas repetidas no Kafka. Tentando novamente em {duration.TotalSeconds}s");
+                        _logger.LogCritical($"** Circuito ABERTO devido a falhas repetidas no SNS. Tentando novamente em {duration.TotalSeconds}s");
                     },
                     onReset: () =>
                     {
-                        _logger.LogInformation("** Circuito FECHADO: Kafka voltou a responder.");
+                        _logger.LogInformation("** Circuito FECHADO: SNS voltou a responder.");
                     });
 
             var retryPolicy = Policy
-                .Handle<KafkaException>()
+                .Handle<Exception>()
                 .Or<TimeoutException>()
                 .WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)),
                     (exception, timeSpan, retryCount, context) =>
                     {
-                        _logger.LogWarning($"** [Tentativa {retryCount}] Kafka falhou, tentando novamente em {timeSpan.TotalSeconds}s. Erro: {exception.Message}", ConsoleColor.Red);
+                        _logger.LogWarning($"** [Tentativa {retryCount}] SNS falhou, tentando novamente em {timeSpan.TotalSeconds}s. Erro: {exception.Message}", ConsoleColor.Red);
                     });
 
             var fallbackPolicy = Policy
-                .Handle<KafkaException>()
+                .Handle<Exception>()
                 .Or<TimeoutException>()
                 .FallbackAsync(async (cancellationToken) =>
                 {
-                    _logger.LogError("** Kafka indisponível! Salvando mensagem para reprocessamento...");
+                    _logger.LogError("** SNS indisponível! Salvando mensagem para reprocessamento...");
                     await SaveMessageForLaterAsync();
                 });
 
@@ -63,7 +67,7 @@ namespace POC_ITAU.Application.UseCases.CreateNotificarion
             {
                 await _policy.ExecuteAsync(async () =>
                 {
-                    await _kafkaService.ProduceAsync("email-notifications", notificationMap);
+                    await _snsService.ProduceAsync(_awsSettings.Value.TopicArn, notificationMap);
                 });
             }
             catch (Exception ex)
