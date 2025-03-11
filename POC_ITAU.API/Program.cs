@@ -25,8 +25,11 @@ var awsSettings = builder.Configuration.GetSection("AWS").Get<AWSSettings>();
 
 builder.Services.AddSingleton(awsSettings);
 
-var accessKey = Environment.GetEnvironmentVariable("AWS_ACCESS_KEY");
-var secretKey = Environment.GetEnvironmentVariable("AWS_SECRET_KEY");
+//var accessKey = Environment.GetEnvironmentVariable("AWS_ACCESS_KEY");
+//var secretKey = Environment.GetEnvironmentVariable("AWS_SECRET_KEY");
+
+var accessKey = Environment.GetEnvironmentVariable("AWS_ACCESS_KEY", EnvironmentVariableTarget.Machine);
+var secretKey = Environment.GetEnvironmentVariable("AWS_SECRET_KEY", EnvironmentVariableTarget.Machine);
 
 var credentials = new BasicAWSCredentials(accessKey, secretKey);
 var snsClient = new AmazonSimpleNotificationServiceClient(credentials, RegionEndpoint.GetBySystemName(awsSettings.Region));
