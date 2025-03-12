@@ -21,7 +21,7 @@ namespace POC_ITAU.IntegrationTest
         }
 
         [Fact]
-        public async Task Handle_ShouldProduceMessageToKafka_WhenSNSIsAvailable()
+        public async Task Handle_ShouldProduceMessageToSNS_WhenSNSIsAvailable()
         {
             var request = new CreateNotificarionRequest("marques.nogueira@live.com", "POC_ENTREVISTA", "Entrevista");
 
