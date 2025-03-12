@@ -49,21 +49,6 @@ services:
     networks:
       - backend-network
 
-  apm:
-    image: docker.elastic.co/apm/apm-server:${STACK_VERSION}
-    ports:
-      - ${APM_PORT}:8200
-    command: >
-      apm-server -e
-         -E output.elasticsearch.hosts=["es01:9200"]
-         -E output.elasticsearch.protocol=http
-         -E output.elasticsearch.username=elastic
-         -E output.elasticsearch.password=${ELASTIC_PASSWORD}
-         -E output.elasticsearch.ssl.enabled=false
-    mem_limit: ${MEM_LIMIT}
-    networks:
-      - backend-network
-
   zookeeper:
     image: confluentinc/cp-zookeeper:latest
     environment:
@@ -99,7 +84,6 @@ services:
       - zookeeper
       - es01
       - kibana
-      - apm
     ports:
       - "8080:8080"
       - "8081:8081"

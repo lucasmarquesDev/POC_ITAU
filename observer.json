@@ -1,0 +1,2049 @@
+{
+    "took": 5,
+    "timed_out": false,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 43,
+            "relation": "eq"
+        },
+        "max_score": 1.0,
+        "hits": [
+            {
+                "_index": "indexlogs",
+                "_id": "-yFWipUB4r-5nczTM5EN",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:56.7781093-03:00",
+                    "log.level": "Information",
+                    "message": "Starting API",
+                    "metadata": {
+                        "message_template": "Starting API"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:56.7781093-03:00"
+                    },
+                    "log": {
+                        "logger": "Elastic.CommonSchema.Serilog",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 11
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "_CFWipUB4r-5nczTM5EN",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:58.1163711-03:00",
+                    "log.level": "Information",
+                    "message": "Now listening on: \"https://localhost:7271\"",
+                    "metadata": {
+                        "message_template": "Now listening on: {address}",
+                        "address": "https://localhost:7271",
+                        "event_id": {
+                            "id": 14,
+                            "name": "ListeningOnAddress"
+                        }
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:58.1163711-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.Hosting.Lifetime",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 11
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "_SFWipUB4r-5nczTM5EN",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:58.1177356-03:00",
+                    "log.level": "Information",
+                    "message": "Now listening on: \"http://localhost:5283\"",
+                    "metadata": {
+                        "message_template": "Now listening on: {address}",
+                        "address": "http://localhost:5283",
+                        "event_id": {
+                            "id": 14,
+                            "name": "ListeningOnAddress"
+                        }
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:58.1177356-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.Hosting.Lifetime",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 11
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "_iFWipUB4r-5nczTM5EN",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:58.1205896-03:00",
+                    "log.level": "Information",
+                    "message": "Application started. Press Ctrl+C to shut down.",
+                    "metadata": {
+                        "message_template": "Application started. Press Ctrl+C to shut down."
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:58.1205896-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.Hosting.Lifetime",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 11
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "_yFWipUB4r-5nczTM5EN",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:58.1212388-03:00",
+                    "log.level": "Information",
+                    "message": "Hosting environment: \"Development\"",
+                    "metadata": {
+                        "message_template": "Hosting environment: {EnvName}",
+                        "env_name": "Development"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:58.1212388-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.Hosting.Lifetime",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 11
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "ACFWipUB4r-5nczTM5IN",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:58.121288-03:00",
+                    "log.level": "Information",
+                    "message": "Content root path: \"C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API\"",
+                    "metadata": {
+                        "message_template": "Content root path: {ContentRoot}",
+                        "content_root": "C:\\Users\\marqu\\source\\repos\\POC_ITAU\\POC_ITAU.API"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:58.121288-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.Hosting.Lifetime",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 11
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "ASFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:59.3626652-03:00",
+                    "log.level": "Information",
+                    "message": "Request starting \"HTTP/2\" \"GET\" \"https\"://\"localhost:7271\"\"\"\"/swagger\"\"\" - null null",
+                    "metadata": {
+                        "message_template": "Request starting {Protocol} {Method} {Scheme}://{Host}{PathBase}{Path}{QueryString} - {ContentType} {ContentLength}",
+                        "protocol": "HTTP/2",
+                        "method": "GET",
+                        "content_type": null,
+                        "content_length": null,
+                        "scheme": "https",
+                        "path_base": "",
+                        "path": "/swagger",
+                        "query_string": "",
+                        "event_id": {
+                            "id": 1
+                        },
+                        "request_id": "0HNB1C6V10K2A:00000001",
+                        "request_path": "/swagger",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:59.3626652-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Hosting.Diagnostics",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "AiFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:59.6413117-03:00",
+                    "log.level": "Information",
+                    "message": "** Correlation ID: \"4f874916-166e-4dc6-8231-0affae769ffc\", Trace ID: \"938f0157280c6bb4706e5da281b95ba0\"",
+                    "metadata": {
+                        "message_template": "** Correlation ID: {CorrelationId}, Trace ID: {TraceId}",
+                        "correlation_id": "4f874916-166e-4dc6-8231-0affae769ffc",
+                        "trace_id": "938f0157280c6bb4706e5da281b95ba0",
+                        "request_id": "0HNB1C6V10K2A:00000001",
+                        "request_path": "/swagger",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:59.6413117-03:00"
+                    },
+                    "log": {
+                        "logger": "POC_ITAU.API.Middlewares.CorrelationIdMiddleware",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "AyFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:59.7194462-03:00",
+                    "log.level": "Information",
+                    "message": "HTTP \"GET\" \"/swagger\" responded 301 in 67.4841 ms",
+                    "metadata": {
+                        "message_template": "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms",
+                        "user_name": null,
+                        "client_ip": "::1",
+                        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+                        "resource": null,
+                        "request_method": "GET",
+                        "request_path": "/swagger",
+                        "status_code": 301,
+                        "elapsed": 67.4841,
+                        "correlation_id": "4f874916-166e-4dc6-8231-0affae769ffc",
+                        "request_id": "0HNB1C6V10K2A:00000001",
+                        "connection_id": "0HNB1C6V10K2A",
+                        "scope": [
+                            "4f874916-166e-4dc6-8231-0affae769ffc"
+                        ]
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:59.7194462-03:00"
+                    },
+                    "log": {
+                        "logger": "Serilog.AspNetCore.RequestLoggingMiddleware",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "BCFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:59.7385706-03:00",
+                    "log.level": "Information",
+                    "message": "Request finished \"HTTP/2\" \"GET\" \"https\"://\"localhost:7271\"\"\"\"/swagger\"\"\" - 301 0 null 415.4185ms",
+                    "metadata": {
+                        "message_template": "Request finished {Protocol} {Method} {Scheme}://{Host}{PathBase}{Path}{QueryString} - {StatusCode} {ContentLength} {ContentType} {ElapsedMilliseconds}ms",
+                        "elapsed_milliseconds": 415.4185,
+                        "status_code": 301,
+                        "content_type": null,
+                        "content_length": 0,
+                        "protocol": "HTTP/2",
+                        "method": "GET",
+                        "scheme": "https",
+                        "path_base": "",
+                        "path": "/swagger",
+                        "query_string": "",
+                        "event_id": {
+                            "id": 2
+                        },
+                        "request_id": "0HNB1C6V10K2A:00000001",
+                        "request_path": "/swagger",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:59.7385706-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Hosting.Diagnostics",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "BSFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:59.7655978-03:00",
+                    "log.level": "Information",
+                    "message": "Request starting \"HTTP/2\" \"GET\" \"https\"://\"localhost:7271\"\"\"\"/swagger/index.html\"\"\" - null null",
+                    "metadata": {
+                        "message_template": "Request starting {Protocol} {Method} {Scheme}://{Host}{PathBase}{Path}{QueryString} - {ContentType} {ContentLength}",
+                        "protocol": "HTTP/2",
+                        "method": "GET",
+                        "content_type": null,
+                        "content_length": null,
+                        "scheme": "https",
+                        "path_base": "",
+                        "path": "/swagger/index.html",
+                        "query_string": "",
+                        "event_id": {
+                            "id": 1
+                        },
+                        "request_id": "0HNB1C6V10K2A:00000003",
+                        "request_path": "/swagger/index.html",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:59.7655978-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Hosting.Diagnostics",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "BiFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:59.7740292-03:00",
+                    "log.level": "Information",
+                    "message": "** Correlation ID: \"3b97d2f8-68ce-4862-afad-60da63276461\", Trace ID: \"32c943eab9b57d876ce409d5bebef085\"",
+                    "metadata": {
+                        "message_template": "** Correlation ID: {CorrelationId}, Trace ID: {TraceId}",
+                        "correlation_id": "3b97d2f8-68ce-4862-afad-60da63276461",
+                        "trace_id": "32c943eab9b57d876ce409d5bebef085",
+                        "request_id": "0HNB1C6V10K2A:00000003",
+                        "request_path": "/swagger/index.html",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:59.7740292-03:00"
+                    },
+                    "log": {
+                        "logger": "POC_ITAU.API.Middlewares.CorrelationIdMiddleware",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "ByFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:59.9123032-03:00",
+                    "log.level": "Information",
+                    "message": "HTTP \"GET\" \"/swagger/index.html\" responded 200 in 137.8041 ms",
+                    "metadata": {
+                        "message_template": "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms",
+                        "user_name": null,
+                        "client_ip": "::1",
+                        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+                        "resource": null,
+                        "request_method": "GET",
+                        "request_path": "/swagger/index.html",
+                        "status_code": 200,
+                        "elapsed": 137.8041,
+                        "correlation_id": "3b97d2f8-68ce-4862-afad-60da63276461",
+                        "request_id": "0HNB1C6V10K2A:00000003",
+                        "connection_id": "0HNB1C6V10K2A",
+                        "scope": [
+                            "3b97d2f8-68ce-4862-afad-60da63276461"
+                        ]
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:59.9123032-03:00"
+                    },
+                    "log": {
+                        "logger": "Serilog.AspNetCore.RequestLoggingMiddleware",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "CCFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:59.9182186-03:00",
+                    "log.level": "Information",
+                    "message": "Request starting \"HTTP/2\" \"GET\" \"https\"://\"localhost:7271\"\"\"\"/swagger/swagger-ui.css\"\"\" - null null",
+                    "metadata": {
+                        "message_template": "Request starting {Protocol} {Method} {Scheme}://{Host}{PathBase}{Path}{QueryString} - {ContentType} {ContentLength}",
+                        "protocol": "HTTP/2",
+                        "method": "GET",
+                        "content_type": null,
+                        "content_length": null,
+                        "scheme": "https",
+                        "path_base": "",
+                        "path": "/swagger/swagger-ui.css",
+                        "query_string": "",
+                        "event_id": {
+                            "id": 1
+                        },
+                        "request_id": "0HNB1C6V10K2A:00000005",
+                        "request_path": "/swagger/swagger-ui.css",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:59.9182186-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Hosting.Diagnostics",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "CSFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:59.9184434-03:00",
+                    "log.level": "Information",
+                    "message": "Request finished \"HTTP/2\" \"GET\" \"https\"://\"localhost:7271\"\"\"\"/swagger/index.html\"\"\" - 200 null \"text/html;charset=utf-8\" 153.1509ms",
+                    "metadata": {
+                        "message_template": "Request finished {Protocol} {Method} {Scheme}://{Host}{PathBase}{Path}{QueryString} - {StatusCode} {ContentLength} {ContentType} {ElapsedMilliseconds}ms",
+                        "elapsed_milliseconds": 153.1509,
+                        "status_code": 200,
+                        "content_type": "text/html;charset=utf-8",
+                        "content_length": null,
+                        "protocol": "HTTP/2",
+                        "method": "GET",
+                        "scheme": "https",
+                        "path_base": "",
+                        "path": "/swagger/index.html",
+                        "query_string": "",
+                        "event_id": {
+                            "id": 2
+                        },
+                        "request_id": "0HNB1C6V10K2A:00000003",
+                        "request_path": "/swagger/index.html",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:59.9184434-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Hosting.Diagnostics",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "CiFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:59.9207735-03:00",
+                    "log.level": "Information",
+                    "message": "** Correlation ID: \"9c0a9779-3e1b-4e08-999e-b67a4198e667\", Trace ID: \"9c455d4320686ebe344400a442db01e8\"",
+                    "metadata": {
+                        "message_template": "** Correlation ID: {CorrelationId}, Trace ID: {TraceId}",
+                        "correlation_id": "9c0a9779-3e1b-4e08-999e-b67a4198e667",
+                        "trace_id": "9c455d4320686ebe344400a442db01e8",
+                        "request_id": "0HNB1C6V10K2A:00000005",
+                        "request_path": "/swagger/swagger-ui.css",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:59.9207735-03:00"
+                    },
+                    "log": {
+                        "logger": "POC_ITAU.API.Middlewares.CorrelationIdMiddleware",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "CyFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:59.9291022-03:00",
+                    "log.level": "Information",
+                    "message": "Request starting \"HTTP/2\" \"GET\" \"https\"://\"localhost:7271\"\"\"\"/swagger/swagger-ui-bundle.js\"\"\" - null null",
+                    "metadata": {
+                        "message_template": "Request starting {Protocol} {Method} {Scheme}://{Host}{PathBase}{Path}{QueryString} - {ContentType} {ContentLength}",
+                        "protocol": "HTTP/2",
+                        "method": "GET",
+                        "content_type": null,
+                        "content_length": null,
+                        "scheme": "https",
+                        "path_base": "",
+                        "path": "/swagger/swagger-ui-bundle.js",
+                        "query_string": "",
+                        "event_id": {
+                            "id": 1
+                        },
+                        "request_id": "0HNB1C6V10K2A:00000007",
+                        "request_path": "/swagger/swagger-ui-bundle.js",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:59.9291022-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Hosting.Diagnostics",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "DCFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:59.9293286-03:00",
+                    "log.level": "Information",
+                    "message": "Request starting \"HTTP/2\" \"GET\" \"https\"://\"localhost:7271\"\"\"\"/swagger/swagger-ui-standalone-preset.js\"\"\" - null null",
+                    "metadata": {
+                        "message_template": "Request starting {Protocol} {Method} {Scheme}://{Host}{PathBase}{Path}{QueryString} - {ContentType} {ContentLength}",
+                        "protocol": "HTTP/2",
+                        "method": "GET",
+                        "content_type": null,
+                        "content_length": null,
+                        "scheme": "https",
+                        "path_base": "",
+                        "path": "/swagger/swagger-ui-standalone-preset.js",
+                        "query_string": "",
+                        "event_id": {
+                            "id": 1
+                        },
+                        "request_id": "0HNB1C6V10K2A:00000009",
+                        "request_path": "/swagger/swagger-ui-standalone-preset.js",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:59.9293286-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Hosting.Diagnostics",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "DSFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:59.9303017-03:00",
+                    "log.level": "Information",
+                    "message": "** Correlation ID: \"9bb79829-5020-4317-bf7c-01105a539814\", Trace ID: \"cd9816f963122d00ab0521ade763e9b3\"",
+                    "metadata": {
+                        "message_template": "** Correlation ID: {CorrelationId}, Trace ID: {TraceId}",
+                        "correlation_id": "9bb79829-5020-4317-bf7c-01105a539814",
+                        "trace_id": "cd9816f963122d00ab0521ade763e9b3",
+                        "request_id": "0HNB1C6V10K2A:00000009",
+                        "request_path": "/swagger/swagger-ui-standalone-preset.js",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:59.9303017-03:00"
+                    },
+                    "log": {
+                        "logger": "POC_ITAU.API.Middlewares.CorrelationIdMiddleware",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "DiFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:30:59.9303024-03:00",
+                    "log.level": "Information",
+                    "message": "** Correlation ID: \"25564029-1187-4d61-a6cc-3a1c4c008958\", Trace ID: \"a4c8e78d9b47c601e17416fab61f5a97\"",
+                    "metadata": {
+                        "message_template": "** Correlation ID: {CorrelationId}, Trace ID: {TraceId}",
+                        "correlation_id": "25564029-1187-4d61-a6cc-3a1c4c008958",
+                        "trace_id": "a4c8e78d9b47c601e17416fab61f5a97",
+                        "request_id": "0HNB1C6V10K2A:00000007",
+                        "request_path": "/swagger/swagger-ui-bundle.js",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:30:59.9303024-03:00"
+                    },
+                    "log": {
+                        "logger": "POC_ITAU.API.Middlewares.CorrelationIdMiddleware",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "DyFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:00.0570444-03:00",
+                    "log.level": "Information",
+                    "message": "HTTP \"GET\" \"/swagger/swagger-ui.css\" responded 200 in 136.0357 ms",
+                    "metadata": {
+                        "message_template": "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms",
+                        "user_name": null,
+                        "client_ip": "::1",
+                        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+                        "resource": null,
+                        "request_method": "GET",
+                        "request_path": "/swagger/swagger-ui.css",
+                        "status_code": 200,
+                        "elapsed": 136.0357,
+                        "correlation_id": "9c0a9779-3e1b-4e08-999e-b67a4198e667",
+                        "request_id": "0HNB1C6V10K2A:00000005",
+                        "connection_id": "0HNB1C6V10K2A",
+                        "scope": [
+                            "9c0a9779-3e1b-4e08-999e-b67a4198e667"
+                        ]
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:00.0570444-03:00"
+                    },
+                    "log": {
+                        "logger": "Serilog.AspNetCore.RequestLoggingMiddleware",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "ECFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:00.0573627-03:00",
+                    "log.level": "Information",
+                    "message": "Request finished \"HTTP/2\" \"GET\" \"https\"://\"localhost:7271\"\"\"\"/swagger/swagger-ui.css\"\"\" - 200 143943 \"text/css\" 139.455ms",
+                    "metadata": {
+                        "message_template": "Request finished {Protocol} {Method} {Scheme}://{Host}{PathBase}{Path}{QueryString} - {StatusCode} {ContentLength} {ContentType} {ElapsedMilliseconds}ms",
+                        "elapsed_milliseconds": 139.455,
+                        "status_code": 200,
+                        "content_type": "text/css",
+                        "content_length": 143943,
+                        "protocol": "HTTP/2",
+                        "method": "GET",
+                        "scheme": "https",
+                        "path_base": "",
+                        "path": "/swagger/swagger-ui.css",
+                        "query_string": "",
+                        "event_id": {
+                            "id": 2
+                        },
+                        "request_id": "0HNB1C6V10K2A:00000005",
+                        "request_path": "/swagger/swagger-ui.css",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:00.0573627-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Hosting.Diagnostics",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "ESFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:00.0931385-03:00",
+                    "log.level": "Information",
+                    "message": "HTTP \"GET\" \"/swagger/swagger-ui-standalone-preset.js\" responded 200 in 162.6492 ms",
+                    "metadata": {
+                        "message_template": "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms",
+                        "user_name": null,
+                        "client_ip": "::1",
+                        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+                        "resource": null,
+                        "request_method": "GET",
+                        "request_path": "/swagger/swagger-ui-standalone-preset.js",
+                        "status_code": 200,
+                        "elapsed": 162.6492,
+                        "correlation_id": "9bb79829-5020-4317-bf7c-01105a539814",
+                        "request_id": "0HNB1C6V10K2A:00000009",
+                        "connection_id": "0HNB1C6V10K2A",
+                        "scope": [
+                            "9bb79829-5020-4317-bf7c-01105a539814"
+                        ]
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:00.0931385-03:00"
+                    },
+                    "log": {
+                        "logger": "Serilog.AspNetCore.RequestLoggingMiddleware",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "EiFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:00.0934416-03:00",
+                    "log.level": "Information",
+                    "message": "Request finished \"HTTP/2\" \"GET\" \"https\"://\"localhost:7271\"\"\"\"/swagger/swagger-ui-standalone-preset.js\"\"\" - 200 339486 \"text/javascript\" 164.2978ms",
+                    "metadata": {
+                        "message_template": "Request finished {Protocol} {Method} {Scheme}://{Host}{PathBase}{Path}{QueryString} - {StatusCode} {ContentLength} {ContentType} {ElapsedMilliseconds}ms",
+                        "elapsed_milliseconds": 164.2978,
+                        "status_code": 200,
+                        "content_type": "text/javascript",
+                        "content_length": 339486,
+                        "protocol": "HTTP/2",
+                        "method": "GET",
+                        "scheme": "https",
+                        "path_base": "",
+                        "path": "/swagger/swagger-ui-standalone-preset.js",
+                        "query_string": "",
+                        "event_id": {
+                            "id": 2
+                        },
+                        "request_id": "0HNB1C6V10K2A:00000009",
+                        "request_path": "/swagger/swagger-ui-standalone-preset.js",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:00.0934416-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Hosting.Diagnostics",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "EyFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:00.1609103-03:00",
+                    "log.level": "Information",
+                    "message": "HTTP \"GET\" \"/swagger/swagger-ui-bundle.js\" responded 200 in 230.4122 ms",
+                    "metadata": {
+                        "message_template": "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms",
+                        "user_name": null,
+                        "client_ip": "::1",
+                        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+                        "resource": null,
+                        "request_method": "GET",
+                        "request_path": "/swagger/swagger-ui-bundle.js",
+                        "status_code": 200,
+                        "elapsed": 230.4122,
+                        "correlation_id": "25564029-1187-4d61-a6cc-3a1c4c008958",
+                        "request_id": "0HNB1C6V10K2A:00000007",
+                        "connection_id": "0HNB1C6V10K2A",
+                        "scope": [
+                            "25564029-1187-4d61-a6cc-3a1c4c008958"
+                        ]
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:00.1609103-03:00"
+                    },
+                    "log": {
+                        "logger": "Serilog.AspNetCore.RequestLoggingMiddleware",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "FCFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:00.1613059-03:00",
+                    "log.level": "Information",
+                    "message": "Request finished \"HTTP/2\" \"GET\" \"https\"://\"localhost:7271\"\"\"\"/swagger/swagger-ui-bundle.js\"\"\" - 200 1096145 \"text/javascript\" 233.6388ms",
+                    "metadata": {
+                        "message_template": "Request finished {Protocol} {Method} {Scheme}://{Host}{PathBase}{Path}{QueryString} - {StatusCode} {ContentLength} {ContentType} {ElapsedMilliseconds}ms",
+                        "elapsed_milliseconds": 233.6388,
+                        "status_code": 200,
+                        "content_type": "text/javascript",
+                        "content_length": 1096145,
+                        "protocol": "HTTP/2",
+                        "method": "GET",
+                        "scheme": "https",
+                        "path_base": "",
+                        "path": "/swagger/swagger-ui-bundle.js",
+                        "query_string": "",
+                        "event_id": {
+                            "id": 2
+                        },
+                        "request_id": "0HNB1C6V10K2A:00000007",
+                        "request_path": "/swagger/swagger-ui-bundle.js",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:00.1613059-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Hosting.Diagnostics",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "FSFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:00.4905565-03:00",
+                    "log.level": "Information",
+                    "message": "Request starting \"HTTP/2\" \"GET\" \"https\"://\"localhost:7271\"\"\"\"/_vs/browserLink\"\"\" - null null",
+                    "metadata": {
+                        "message_template": "Request starting {Protocol} {Method} {Scheme}://{Host}{PathBase}{Path}{QueryString} - {ContentType} {ContentLength}",
+                        "protocol": "HTTP/2",
+                        "method": "GET",
+                        "content_type": null,
+                        "content_length": null,
+                        "scheme": "https",
+                        "path_base": "",
+                        "path": "/_vs/browserLink",
+                        "query_string": "",
+                        "event_id": {
+                            "id": 1
+                        },
+                        "request_id": "0HNB1C6V10K2A:0000000B",
+                        "request_path": "/_vs/browserLink",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:00.4905565-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Hosting.Diagnostics",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "FiFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:00.4907921-03:00",
+                    "log.level": "Information",
+                    "message": "Request starting \"HTTP/2\" \"GET\" \"https\"://\"localhost:7271\"\"\"\"/_framework/aspnetcore-browser-refresh.js\"\"\" - null null",
+                    "metadata": {
+                        "message_template": "Request starting {Protocol} {Method} {Scheme}://{Host}{PathBase}{Path}{QueryString} - {ContentType} {ContentLength}",
+                        "protocol": "HTTP/2",
+                        "method": "GET",
+                        "content_type": null,
+                        "content_length": null,
+                        "scheme": "https",
+                        "path_base": "",
+                        "path": "/_framework/aspnetcore-browser-refresh.js",
+                        "query_string": "",
+                        "event_id": {
+                            "id": 1
+                        },
+                        "request_id": "0HNB1C6V10K2A:0000000D",
+                        "request_path": "/_framework/aspnetcore-browser-refresh.js",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:00.4907921-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Hosting.Diagnostics",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "FyFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:00.4983762-03:00",
+                    "log.level": "Information",
+                    "message": "Request finished \"HTTP/2\" \"GET\" \"https\"://\"localhost:7271\"\"\"\"/_framework/aspnetcore-browser-refresh.js\"\"\" - 200 13760 \"application/javascript; charset=utf-8\" 7.7769ms",
+                    "metadata": {
+                        "message_template": "Request finished {Protocol} {Method} {Scheme}://{Host}{PathBase}{Path}{QueryString} - {StatusCode} {ContentLength} {ContentType} {ElapsedMilliseconds}ms",
+                        "elapsed_milliseconds": 7.7769,
+                        "status_code": 200,
+                        "content_type": "application/javascript; charset=utf-8",
+                        "content_length": 13760,
+                        "protocol": "HTTP/2",
+                        "method": "GET",
+                        "scheme": "https",
+                        "path_base": "",
+                        "path": "/_framework/aspnetcore-browser-refresh.js",
+                        "query_string": "",
+                        "event_id": {
+                            "id": 2
+                        },
+                        "request_id": "0HNB1C6V10K2A:0000000D",
+                        "request_path": "/_framework/aspnetcore-browser-refresh.js",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:00.4983762-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Hosting.Diagnostics",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "GCFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:00.6083056-03:00",
+                    "log.level": "Information",
+                    "message": "Request finished \"HTTP/2\" \"GET\" \"https\"://\"localhost:7271\"\"\"\"/_vs/browserLink\"\"\" - 200 null \"text/javascript; charset=UTF-8\" 117.8813ms",
+                    "metadata": {
+                        "message_template": "Request finished {Protocol} {Method} {Scheme}://{Host}{PathBase}{Path}{QueryString} - {StatusCode} {ContentLength} {ContentType} {ElapsedMilliseconds}ms",
+                        "elapsed_milliseconds": 117.8813,
+                        "status_code": 200,
+                        "content_type": "text/javascript; charset=UTF-8",
+                        "content_length": null,
+                        "protocol": "HTTP/2",
+                        "method": "GET",
+                        "scheme": "https",
+                        "path_base": "",
+                        "path": "/_vs/browserLink",
+                        "query_string": "",
+                        "event_id": {
+                            "id": 2
+                        },
+                        "request_id": "0HNB1C6V10K2A:0000000B",
+                        "request_path": "/_vs/browserLink",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:00.6083056-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Hosting.Diagnostics",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "GSFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:00.7290893-03:00",
+                    "log.level": "Information",
+                    "message": "Request starting \"HTTP/2\" \"GET\" \"https\"://\"localhost:7271\"\"\"\"/swagger/v1/swagger.json\"\"\" - null null",
+                    "metadata": {
+                        "message_template": "Request starting {Protocol} {Method} {Scheme}://{Host}{PathBase}{Path}{QueryString} - {ContentType} {ContentLength}",
+                        "protocol": "HTTP/2",
+                        "method": "GET",
+                        "content_type": null,
+                        "content_length": null,
+                        "scheme": "https",
+                        "path_base": "",
+                        "path": "/swagger/v1/swagger.json",
+                        "query_string": "",
+                        "event_id": {
+                            "id": 1
+                        },
+                        "request_id": "0HNB1C6V10K2A:0000000F",
+                        "request_path": "/swagger/v1/swagger.json",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:00.7290893-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Hosting.Diagnostics",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "GiFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:00.7295595-03:00",
+                    "log.level": "Information",
+                    "message": "** Correlation ID: \"55f23bcf-f817-437c-8a62-8d400afc76c4\", Trace ID: \"fdfc73bbcab8cbac4fcf805f3bebe44b\"",
+                    "metadata": {
+                        "message_template": "** Correlation ID: {CorrelationId}, Trace ID: {TraceId}",
+                        "correlation_id": "55f23bcf-f817-437c-8a62-8d400afc76c4",
+                        "trace_id": "fdfc73bbcab8cbac4fcf805f3bebe44b",
+                        "request_id": "0HNB1C6V10K2A:0000000F",
+                        "request_path": "/swagger/v1/swagger.json",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:00.7295595-03:00"
+                    },
+                    "log": {
+                        "logger": "POC_ITAU.API.Middlewares.CorrelationIdMiddleware",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "GyFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:00.8069421-03:00",
+                    "log.level": "Information",
+                    "message": "HTTP \"GET\" \"/swagger/v1/swagger.json\" responded 200 in 77.2435 ms",
+                    "metadata": {
+                        "message_template": "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms",
+                        "user_name": null,
+                        "client_ip": "::1",
+                        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+                        "resource": null,
+                        "request_method": "GET",
+                        "request_path": "/swagger/v1/swagger.json",
+                        "status_code": 200,
+                        "elapsed": 77.2435,
+                        "correlation_id": "55f23bcf-f817-437c-8a62-8d400afc76c4",
+                        "request_id": "0HNB1C6V10K2A:0000000F",
+                        "connection_id": "0HNB1C6V10K2A",
+                        "scope": [
+                            "55f23bcf-f817-437c-8a62-8d400afc76c4"
+                        ]
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:00.8069421-03:00"
+                    },
+                    "log": {
+                        "logger": "Serilog.AspNetCore.RequestLoggingMiddleware",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "HCFWipUB4r-5nczTPpIc",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:00.8072225-03:00",
+                    "log.level": "Information",
+                    "message": "Request finished \"HTTP/2\" \"GET\" \"https\"://\"localhost:7271\"\"\"\"/swagger/v1/swagger.json\"\"\" - 200 null \"application/json;charset=utf-8\" 78.3952ms",
+                    "metadata": {
+                        "message_template": "Request finished {Protocol} {Method} {Scheme}://{Host}{PathBase}{Path}{QueryString} - {StatusCode} {ContentLength} {ContentType} {ElapsedMilliseconds}ms",
+                        "elapsed_milliseconds": 78.3952,
+                        "status_code": 200,
+                        "content_type": "application/json;charset=utf-8",
+                        "content_length": null,
+                        "protocol": "HTTP/2",
+                        "method": "GET",
+                        "scheme": "https",
+                        "path_base": "",
+                        "path": "/swagger/v1/swagger.json",
+                        "query_string": "",
+                        "event_id": {
+                            "id": 2
+                        },
+                        "request_id": "0HNB1C6V10K2A:0000000F",
+                        "request_path": "/swagger/v1/swagger.json",
+                        "connection_id": "0HNB1C6V10K2A"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:00.8072225-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Hosting.Diagnostics",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 21
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "HSFWipUB4r-5nczTXZJU",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:04.39687-03:00",
+                    "log.level": "Information",
+                    "message": "Request starting \"HTTP/2\" \"POST\" \"https\"://\"localhost:7271\"\"\"\"/Notification/sendEmail\"\"\" - \"application/json\" 75",
+                    "metadata": {
+                        "message_template": "Request starting {Protocol} {Method} {Scheme}://{Host}{PathBase}{Path}{QueryString} - {ContentType} {ContentLength}",
+                        "protocol": "HTTP/2",
+                        "method": "POST",
+                        "content_type": "application/json",
+                        "content_length": 75,
+                        "scheme": "https",
+                        "path_base": "",
+                        "path": "/Notification/sendEmail",
+                        "query_string": "",
+                        "event_id": {
+                            "id": 1
+                        },
+                        "request_id": "0HNB1C6V10K2C:00000001",
+                        "request_path": "/Notification/sendEmail",
+                        "connection_id": "0HNB1C6V10K2C"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:04.39687-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Hosting.Diagnostics",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 18
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "HiFWipUB4r-5nczTXZJV",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:04.4002613-03:00",
+                    "log.level": "Information",
+                    "message": "** Correlation ID: \"cba00951-1882-46e4-80b3-864715ced40d\", Trace ID: \"189156cdc96b00d1710240b45e5d482f\"",
+                    "metadata": {
+                        "message_template": "** Correlation ID: {CorrelationId}, Trace ID: {TraceId}",
+                        "correlation_id": "cba00951-1882-46e4-80b3-864715ced40d",
+                        "trace_id": "189156cdc96b00d1710240b45e5d482f",
+                        "request_id": "0HNB1C6V10K2C:00000001",
+                        "request_path": "/Notification/sendEmail",
+                        "connection_id": "0HNB1C6V10K2C"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:04.4002613-03:00"
+                    },
+                    "log": {
+                        "logger": "POC_ITAU.API.Middlewares.CorrelationIdMiddleware",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 18
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "HyFWipUB4r-5nczTXZJV",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:04.4051228-03:00",
+                    "log.level": "Information",
+                    "message": "Executing endpoint '\"POC_ITAU.Controllers.NotificationController.SendEmail (POC_ITAU.API)\"'",
+                    "metadata": {
+                        "message_template": "Executing endpoint '{EndpointName}'",
+                        "endpoint_name": "POC_ITAU.Controllers.NotificationController.SendEmail (POC_ITAU.API)",
+                        "event_id": {
+                            "name": "ExecutingEndpoint"
+                        },
+                        "correlation_id": "cba00951-1882-46e4-80b3-864715ced40d",
+                        "request_id": "0HNB1C6V10K2C:00000001",
+                        "request_path": "/Notification/sendEmail",
+                        "connection_id": "0HNB1C6V10K2C",
+                        "scope": [
+                            "cba00951-1882-46e4-80b3-864715ced40d"
+                        ]
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:04.4051228-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Routing.EndpointMiddleware",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 18
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "ICFWipUB4r-5nczTXZJV",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:04.447696-03:00",
+                    "log.level": "Information",
+                    "message": "Route matched with \"{action = \\\"SendEmail\\\", controller = \\\"Notification\\\"}\". Executing controller action with signature \"System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendEmail(POC_ITAU.Domain.Entities.Request.Notification)\" on controller \"POC_ITAU.Controllers.NotificationController\" (\"POC_ITAU.API\").",
+                    "metadata": {
+                        "message_template": "Route matched with {RouteData}. Executing controller action with signature {MethodInfo} on controller {Controller} ({AssemblyName}).",
+                        "route_data": "{action = \"SendEmail\", controller = \"Notification\"}",
+                        "method_info": "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendEmail(POC_ITAU.Domain.Entities.Request.Notification)",
+                        "controller": "POC_ITAU.Controllers.NotificationController",
+                        "assembly_name": "POC_ITAU.API",
+                        "event_id": {
+                            "id": 102,
+                            "name": "ControllerActionExecuting"
+                        },
+                        "correlation_id": "cba00951-1882-46e4-80b3-864715ced40d",
+                        "request_id": "0HNB1C6V10K2C:00000001",
+                        "request_path": "/Notification/sendEmail",
+                        "connection_id": "0HNB1C6V10K2C",
+                        "scope": [
+                            "cba00951-1882-46e4-80b3-864715ced40d"
+                        ]
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "id": "18dd39c3-9981-44e4-a060-7da8beffbb9d",
+                        "action": "POC_ITAU.Controllers.NotificationController.SendEmail (POC_ITAU.API)",
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:04.447696-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 18
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "ISFWipUB4r-5nczTyZJ1",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:36.3406005-03:00",
+                    "log.level": "Information",
+                    "message": "Executing StatusCodeResult, setting HTTP status code 200",
+                    "metadata": {
+                        "message_template": "Executing StatusCodeResult, setting HTTP status code {StatusCode}",
+                        "status_code": 200,
+                        "event_id": {
+                            "id": 1,
+                            "name": "HttpStatusCodeResultExecuting"
+                        },
+                        "correlation_id": "cba00951-1882-46e4-80b3-864715ced40d",
+                        "request_id": "0HNB1C6V10K2C:00000001",
+                        "request_path": "/Notification/sendEmail",
+                        "connection_id": "0HNB1C6V10K2C",
+                        "scope": [
+                            "cba00951-1882-46e4-80b3-864715ced40d"
+                        ]
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "id": "18dd39c3-9981-44e4-a060-7da8beffbb9d",
+                        "action": "POC_ITAU.Controllers.NotificationController.SendEmail (POC_ITAU.API)",
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:36.3406005-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Mvc.StatusCodeResult",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 24
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "IiFWipUB4r-5nczTyZJ1",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:36.344167-03:00",
+                    "log.level": "Information",
+                    "message": "Executed action \"POC_ITAU.Controllers.NotificationController.SendEmail (POC_ITAU.API)\" in 31892.267ms",
+                    "metadata": {
+                        "message_template": "Executed action {ActionName} in {ElapsedMilliseconds}ms",
+                        "elapsed_milliseconds": 31892.267,
+                        "event_id": {
+                            "id": 105,
+                            "name": "ActionExecuted"
+                        },
+                        "correlation_id": "cba00951-1882-46e4-80b3-864715ced40d",
+                        "request_id": "0HNB1C6V10K2C:00000001",
+                        "request_path": "/Notification/sendEmail",
+                        "connection_id": "0HNB1C6V10K2C",
+                        "scope": [
+                            "cba00951-1882-46e4-80b3-864715ced40d"
+                        ]
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "action": "POC_ITAU.Controllers.NotificationController.SendEmail (POC_ITAU.API)",
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:36.344167-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 24
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "IyFWipUB4r-5nczTyZJ1",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:36.3446694-03:00",
+                    "log.level": "Information",
+                    "message": "Executed endpoint '\"POC_ITAU.Controllers.NotificationController.SendEmail (POC_ITAU.API)\"'",
+                    "metadata": {
+                        "message_template": "Executed endpoint '{EndpointName}'",
+                        "endpoint_name": "POC_ITAU.Controllers.NotificationController.SendEmail (POC_ITAU.API)",
+                        "event_id": {
+                            "id": 1,
+                            "name": "ExecutedEndpoint"
+                        },
+                        "correlation_id": "cba00951-1882-46e4-80b3-864715ced40d",
+                        "request_id": "0HNB1C6V10K2C:00000001",
+                        "request_path": "/Notification/sendEmail",
+                        "connection_id": "0HNB1C6V10K2C",
+                        "scope": [
+                            "cba00951-1882-46e4-80b3-864715ced40d"
+                        ]
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:36.3446694-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Routing.EndpointMiddleware",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 24
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "JCFWipUB4r-5nczTyZJ1",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:36.3450058-03:00",
+                    "log.level": "Information",
+                    "message": "HTTP \"POST\" \"/Notification/sendEmail\" responded 200 in 31944.4333 ms",
+                    "metadata": {
+                        "message_template": "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms",
+                        "user_name": null,
+                        "client_ip": "::1",
+                        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+                        "resource": null,
+                        "request_method": "POST",
+                        "request_path": "/Notification/sendEmail",
+                        "status_code": 200,
+                        "elapsed": 31944.4333,
+                        "correlation_id": "cba00951-1882-46e4-80b3-864715ced40d",
+                        "request_id": "0HNB1C6V10K2C:00000001",
+                        "connection_id": "0HNB1C6V10K2C",
+                        "scope": [
+                            "cba00951-1882-46e4-80b3-864715ced40d"
+                        ]
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:36.3450058-03:00"
+                    },
+                    "log": {
+                        "logger": "Serilog.AspNetCore.RequestLoggingMiddleware",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 24
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            },
+            {
+                "_index": "indexlogs",
+                "_id": "JSFWipUB4r-5nczTyZJ1",
+                "_score": 1.0,
+                "_source": {
+                    "@timestamp": "2025-03-12T09:31:36.3453141-03:00",
+                    "log.level": "Information",
+                    "message": "Request finished \"HTTP/2\" \"POST\" \"https\"://\"localhost:7271\"\"\"\"/Notification/sendEmail\"\"\" - 200 0 null 31948.3805ms",
+                    "metadata": {
+                        "message_template": "Request finished {Protocol} {Method} {Scheme}://{Host}{PathBase}{Path}{QueryString} - {StatusCode} {ContentLength} {ContentType} {ElapsedMilliseconds}ms",
+                        "elapsed_milliseconds": 31948.3805,
+                        "status_code": 200,
+                        "content_type": null,
+                        "content_length": 0,
+                        "protocol": "HTTP/2",
+                        "method": "POST",
+                        "scheme": "https",
+                        "path_base": "",
+                        "path": "/Notification/sendEmail",
+                        "query_string": "",
+                        "event_id": {
+                            "id": 2
+                        },
+                        "request_id": "0HNB1C6V10K2C:00000001",
+                        "request_path": "/Notification/sendEmail",
+                        "connection_id": "0HNB1C6V10K2C"
+                    },
+                    "agent": {
+                        "name": "API Observability - "
+                    },
+                    "ecs": {
+                        "version": "1.5.0"
+                    },
+                    "event": {
+                        "severity": 2,
+                        "timezone": "Hora oficial do Brasil",
+                        "created": "2025-03-12T09:31:36.3453141-03:00"
+                    },
+                    "log": {
+                        "logger": "Microsoft.AspNetCore.Hosting.Diagnostics",
+                        "original": null
+                    },
+                    "process": {
+                        "thread": {
+                            "id": 24
+                        },
+                        "pid": 24092,
+                        "name": "POC_ITAU.API",
+                        "executable": "POC_ITAU.API"
+                    }
+                }
+            }
+        ]
+    }
+}
