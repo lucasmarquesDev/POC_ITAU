@@ -8,7 +8,6 @@ namespace POC_ITAU.Application.Extensions
     {
         public static void ConfigureApplicationApp(this IServiceCollection services)
         {
-            services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
         }
     }

@@ -2,6 +2,6 @@
 {
     public interface ISNSService
     {
-        Task ProduceAsync<T>(string topicArn, T notification);
+        Task ProduceAsync<T>(T notification);
     }
 }

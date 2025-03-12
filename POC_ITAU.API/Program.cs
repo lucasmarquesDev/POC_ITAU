@@ -12,8 +12,8 @@ using Amazon;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.AddSerilog(builder.Configuration, "API Observability");
-Log.Information("Starting API");
+builder.AddSerilog(builder.Configuration, "POC_ITAU");
+Log.Information("Iniciando API");
 
 builder.Services.AddElasticsearch(builder.Configuration);
 
@@ -25,9 +25,6 @@ var awsSettings = builder.Configuration.GetSection("AWS").Get<AWSSettings>();
 
 builder.Services.AddSingleton(awsSettings);
 
-//var accessKey = Environment.GetEnvironmentVariable("AWS_ACCESS_KEY");
-//var secretKey = Environment.GetEnvironmentVariable("AWS_SECRET_KEY");
-
 var accessKey = Environment.GetEnvironmentVariable("AWS_ACCESS_KEY", EnvironmentVariableTarget.Machine);
 var secretKey = Environment.GetEnvironmentVariable("AWS_SECRET_KEY", EnvironmentVariableTarget.Machine);
 
@@ -36,7 +33,6 @@ var snsClient = new AmazonSimpleNotificationServiceClient(credentials, RegionEnd
 
 builder.Services.AddSingleton<IAmazonSimpleNotificationService>(snsClient);
 builder.Services.AddSingleton<ISNSService, SNSService>();
-
 
 builder.Services.AddHealthChecks();
 

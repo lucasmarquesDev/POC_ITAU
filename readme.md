@@ -26,14 +26,14 @@ O projeto está organizado da seguinte forma:
    - Implementação de políticas de resiliência com Polly.
    - Mapeamento de objetos com AutoMapper.
 
-3. **POC_ITAU.Persistence.Kafka**:
+3. **POC_ITAU.Persistence**:
    - Implementação do serviço de produção de mensagens no Kafka.
 
 4. **POC_ITAU.BenchmarkPerformance**:
    - Testes de desempenho utilizando BenchmarkDotNet.
 
-5. **POC_ITAU.IntegrationTest**:
-   - Testes de integração para validar o fluxo de notificações.
+5. **POC_ITAU.UnitTest**:
+   - Testes unitarios para validar o usecase.
 
 ## Funcionalidades Principais
 

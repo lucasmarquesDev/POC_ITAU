@@ -13,16 +13,12 @@ namespace POC_ITAU.Application.UseCases.CreateNotificarion
     public class CreateNotificarionHandler : IRequestHandler<CreateNotificarionRequest, CreateNotificarionResponse>
     {
         private readonly ISNSService _snsService;
-        private readonly IMapper _mapper;
         private readonly AsyncPolicyWrap _policy;
-        private readonly IOptions<AWSSettings> _awsSettings;
         private readonly ILogger<CreateNotificarionHandler> _logger;
 
-        public CreateNotificarionHandler(ISNSService snsService, IMapper mapper, IOptions<AWSSettings> awsSettings, ILogger<CreateNotificarionHandler> logger)
+        public CreateNotificarionHandler(ISNSService snsService, ILogger<CreateNotificarionHandler> logger)
         {
             _snsService = snsService;
-            _mapper = mapper;
-            _awsSettings = awsSettings;
             _logger = logger;
 
             var circuitBreakerPolicy = Policy
@@ -61,13 +57,11 @@ namespace POC_ITAU.Application.UseCases.CreateNotificarion
 
         public async Task<CreateNotificarionResponse> Handle(CreateNotificarionRequest request, CancellationToken cancellationToken)
         {
-            var notificationMap = _mapper.Map<CreateNotificarionRequest>(request);
-
             try
             {
                 await _policy.ExecuteAsync(async () =>
                 {
-                    await _snsService.ProduceAsync(_awsSettings.Value.TopicArn, notificationMap);
+                    await _snsService.ProduceAsync(request);
                 });
             }
             catch (Exception ex)
